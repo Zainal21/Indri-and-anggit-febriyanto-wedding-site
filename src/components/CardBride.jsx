@@ -8,7 +8,7 @@ export default function CardBride(props) {
       <div tw="grid grid-cols-1 xl:mt-16 md:grid-cols-2 xl:grid-cols-2 w-full">
         <div
           className="group"
-          tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl mx-2"
+          tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
         >
           <img
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-200"
@@ -26,7 +26,7 @@ export default function CardBride(props) {
         </div>
         <div
           className="group"
-          tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl mx-2"
+          tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
         >
           <img
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-200"

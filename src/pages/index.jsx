@@ -8,18 +8,22 @@ import {
   Footer,
   CountDownTimer,
   CardBride,
-  ImageGalleryCard
+  ImageGalleryCard,
+  ModalOpenInvitation
 } from '../components'
 import GroomsBride from '../images/groomsbride.png'
 import QRImage from '../images/qrocbc.png'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Butterfly from '../images/butterfly.json'
+import { useQueryParam, StringParam } from 'use-query-params'
 import Modal from '../components/Modal'
 import toast, { Toaster } from 'react-hot-toast'
 import imageBackground from '../../static/image-1.jpeg'
 
 const App = () => {
+  const [recipient, setRecipient] = useQueryParam('to', StringParam)
   const [showModal, setShowModal] = React.useState(false)
+  const [showModalInvitation, setShowModalInvitation] = React.useState(true)
   const [showGiving, setShowGiving] = React.useState(false)
 
   const [text, setText] = React.useState('Hello World!')
@@ -45,6 +49,12 @@ const App = () => {
         backgroundSize: 'cover'
       }}
     >
+      {showModalInvitation ? (
+        <ModalOpenInvitation
+          setShowModal={setShowModalInvitation}
+          recipient={recipient}
+        />
+      ) : null}
       <div tw="absolute -top-16 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko z-10" />
       <div
         className="container"

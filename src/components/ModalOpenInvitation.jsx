@@ -1,9 +1,10 @@
 import React from 'react'
 import tw from 'twin.macro'
-import toast, { Toaster } from 'react-hot-toast'
 import Button from './Button'
+import imageBackground from '../../static/image-1.jpeg'
+import ImageAnimation from '../../static/image-2.png'
 
-const ModalOpenInvitation = ({ setShowModal }) => {
+const ModalOpenInvitation = ({ setShowModal, recipient }) => {
   return (
     <div css={tw`fixed h-screen w-screen left-0 top-0 z-20`}>
       <div
@@ -14,41 +15,52 @@ const ModalOpenInvitation = ({ setShowModal }) => {
         css={tw`absolute top-0 left-0 right-0 bottom-0 text-white flex justify-center items-center pointer-events-none`}
       >
         <div
-          css={tw`bg-white text-black p-4 sm:p-10 rounded-2xl sm:w-2/6 w-3/4 font-poppin text-center pointer-events-auto`}
+          css={tw` text-black p-4 sm:p-10  w-full h-full font-poppin text-center pointer-events-auto`}
+          style={{
+            backgroundImage: `url(${imageBackground})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+          }}
         >
-          <div css={tw`font-brittany text-5xl mb-8 mt-10 text-gold-900`}>
-            Invitation Only
+          <div className="flex">
+            <div tw="grid grid-cols-2 text-center font-poppin text-gold-900 py-20">
+              <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
+                <img
+                  src={ImageAnimation}
+                  alt="weeding"
+                  style={{
+                    width: '60%'
+                  }}
+                  tw="object-cover "
+                />
+              </div>
+              <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
+                <div tw="text-4xl sm:text-5xl  text-gold-900 text-center  mt-5 md:mt-28">
+                  Weeding Of
+                </div>
+                <div tw="text-xl sm:text-5xl font-brittany  font-bold text-gold-900 text-center  mt-10">
+                  Anggit Febriyanto & Indri
+                </div>
+                <div tw="text-xl mt-10">
+                  Kepada Bpk/Ibu/Saudara/i: di Tempat,
+                </div>
+                <div tw="font-bold text-xl my-5">
+                  {recipient !== null ? recipient : '-'}
+                </div>
+                <div tw="text-lg"></div>
+                <div tw="px-12">
+                  <div tw="flex"></div>
+                </div>
+                <button tw="text-center font-sans font-semibold rounded-xl focus:outline-none bg-gold-900 text-white text-sm text-lg sm:py-4 sm:px-8 px-4 py-2"
+                 onClick={() => setShowModal(false)}
+                 >
+                  Buka Undangan
+                </button>
+              </div>
+            </div>
           </div>
-          <div css={tw`mb-10 text-lg`}>
-            Hi there! Thank you and welcome to Indri & Anggit Febrianto's
-            wedding website. We are so excited to see you here. Please enter
-            your pin below to RSVP for the wedding reception.
-          </div>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault()
-              onSubmit()
-            }}
-          >
-            <input
-              css={tw`focus:ring-1 focus:outline-none w-full text-lg text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4`}
-              type="text"
-              aria-label="Enter PIN"
-              placeholder="Enter PIN"
-              value={pin}
-              onChange={(e) => setPin(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') {
-                  e.currentTarget.blur()
-                  onSubmit()
-                }
-              }}
-            />
-            <Button isPrimary={true}>Submit</Button>
-          </form>
         </div>
       </div>
-      <Toaster />
     </div>
   )
 }

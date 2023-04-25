@@ -1,6 +1,6 @@
 import React from 'react'
 import tw from 'twin.macro'
-import { Logo, Layout, Link, Button } from '../components'
+import { Logo, Layout, Link, Button, Footer } from '../components'
 import { navigate, Link as GLink } from 'gatsby'
 
 import { useQueryParam, StringParam } from 'use-query-params'

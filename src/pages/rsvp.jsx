@@ -86,7 +86,7 @@ const Rsvp = () => {
       <div tw="py-24 bg-gold-100 relative">
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
           <div tw="text-4xl sm:text-5xl font-poppin font-bold text-gold-900 text-center mb-12">
-            RSVP
+            KONFIRMASI KEHADIRAN
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div tw="font-semibold font-poppin text-lg">
