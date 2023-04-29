@@ -9,7 +9,8 @@ import {
   CountDownTimer,
   CardBride,
   ImageGalleryCard,
-  ModalOpenInvitation
+  ModalOpenInvitation,
+  CommentCard
 } from '../components'
 import GroomsBride from '../images/groomsbride.png'
 import QRImage from '../images/qrocbc.png'
@@ -19,14 +20,22 @@ import { useQueryParam, StringParam } from 'use-query-params'
 import Modal from '../components/Modal'
 import toast, { Toaster } from 'react-hot-toast'
 import imageBackground from '../../static/image-1.jpeg'
+import { createClient } from '@supabase/supabase-js'
+
+const supabase = createClient(
+  process.env.GATSBY_SUPABASE_HOST,
+  process.env.GATSBY_SUPABASE_KEY
+)
 
 const App = () => {
   const [recipient, setRecipient] = useQueryParam('to', StringParam)
+  const [gretting, setGreeting] = React.useState([])
   const [showModal, setShowModal] = React.useState(false)
   const [showModalInvitation, setShowModalInvitation] = React.useState(true)
   const [showGiving, setShowGiving] = React.useState(false)
+  const [showGretting, setShowGretting] = React.useState(false)
 
-  const [text, setText] = React.useState('Hello World!')
+  const [text, setText] = React.useState('')
 
   const handleCopy = () => {
     console.log('test')
@@ -39,6 +48,22 @@ const App = () => {
         toast.error(err)
       })
   }
+
+  const fetchGreeting = async () => {
+    let { data, error } = await supabase.from('rsvp').select('*')
+    if (error) {
+      toast.error(error)
+      return
+    }
+    console.log(data)
+    setGreeting(data)
+  }
+
+  React.useEffect(() => {
+    if (showGretting == true) {
+      fetchGreeting()
+    }
+  }, [showGretting])
 
   return (
     <Layout
@@ -146,7 +171,7 @@ const App = () => {
           </div>
           <div tw="grid grid-cols-1 gap-4 text-center font-poppin text-gold-900 py-20">
             <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
-              KONFIRMASI KEHADIRAN
+              KONFIRMASI KEHADIRAN & KIRIM UCAPAN
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest">
               <div tw="font-brittany text-4xl mb-8">Invitation Only</div>
@@ -154,6 +179,40 @@ const App = () => {
                 <Button isSecondary={true} onClick={() => setShowModal(true)}>
                   Konfirmasi
                 </Button>
+                <Button
+                  isSecondary={true}
+                  onClick={() => setShowGretting(!showGretting)}
+                >
+                  LIhat Semua Daftar Ucapan/Pesan
+                </Button>
+                {showGretting ? (
+                  <>
+                    <div
+                      tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
+                      style={{ maxWidth: 640 }}
+                    >
+                      <div
+                        className="list-item"
+                        style={{
+                          height: '500px',
+                          overflowY: 'scroll'
+                        }}
+                      >
+                        {gretting.length < 1 && 'Tidak Ada Data Yang tersedia'}
+                        {gretting.map((item) => (
+                          <CommentCard
+                            name={item.name}
+                            attending={item.attending}
+                            plusone={item.plusone}
+                            info={item.info}
+                            created_at={item.created_at}
+                            key={item.id}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                ) : null}
               </div>
             </div>
           </div>

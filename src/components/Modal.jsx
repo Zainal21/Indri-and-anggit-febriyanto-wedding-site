@@ -31,9 +31,10 @@ const Modal = ({ setShowModal }) => {
             Invitation Only
           </div>
           <div css={tw`mb-10 text-lg`}>
-            Hi there! Thank you and welcome to Indri & Anggit Febrianto's
-            wedding website. We are so excited to see you here. Please enter
-            your pin below to RSVP for the wedding reception.
+            Hai, yang di sana! Terima kasih dan selamat datang di website
+            pernikahan <strong>Indri & Anggit Febrianto</strong>. Kami sangat
+            senang melihat Anda di sini. Silakan masukkan pin Anda di bawah ini
+            untuk RSVP untuk resepsi pernikahan.
           </div>
           <form
             onSubmit={(e) => {

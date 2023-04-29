@@ -33,7 +33,6 @@ const Confirm = () => {
             id: loadingToast
           })
         } else {
-          console.log(result.error)
           toast.error('Failed to complete RSVP', {
             id: loadingToast
           })

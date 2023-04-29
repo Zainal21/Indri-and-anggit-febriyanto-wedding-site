@@ -4,7 +4,6 @@ import tw from 'twin.macro'
 export default function CardBride(props) {
   return (
     <div tw="container px-6 py-10 mx-auto">
-      <p tw="text-center text-2xl font-brittany  mt-8">Dengan</p>
       <div tw="grid grid-cols-1 xl:mt-16 md:grid-cols-2 xl:grid-cols-2 w-full">
         <div
           className="group"

@@ -70,7 +70,9 @@ const Rsvp = () => {
         tw="mx-auto flex flex-col items-center relative"
       >
         <div tw="p-5 block my-10">
-          <GLink to="/">{/* <Logo /> */}</GLink>
+          <GLink to="/">
+            <Logo />
+          </GLink>
         </div>
         <div tw="w-20 h-20 absolute ml-40 top-32">
           <Player
@@ -334,7 +336,7 @@ const Rsvp = () => {
               border: 0
             }}
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <div tw="flex mb-4 items-center justify-center">
             <div tw="py-4">
