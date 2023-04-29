@@ -70,9 +70,7 @@ const Rsvp = () => {
         tw="mx-auto flex flex-col items-center relative"
       >
         <div tw="p-5 block my-10">
-          <GLink to="/">
-            <Logo />
-          </GLink>
+          <GLink to="/">{/* <Logo /> */}</GLink>
         </div>
         <div tw="w-20 h-20 absolute ml-40 top-32">
           <Player

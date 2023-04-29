@@ -47,9 +47,7 @@ const Confirm = () => {
         tw="mx-auto flex flex-col items-center relative"
       >
         <div tw="p-5 block my-10">
-          <GLink to="/">
-            <Logo />
-          </GLink>
+          <GLink to="/">{/* <Logo /> */}</GLink>
         </div>
       </div>
       <div tw="py-24 bg-white relative">

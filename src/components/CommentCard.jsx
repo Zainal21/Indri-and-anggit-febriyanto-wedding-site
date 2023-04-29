@@ -12,7 +12,7 @@ export default function CommentCard({
   let formattedDate = date.toLocaleDateString('id-ID')
   return (
     <>
-      <div tw="flex-col w-full py-4 mx-auto bg-white border-b-2 border-r-2 border-gray-200 sm:px-4 sm:py-4 md:px-4 sm:rounded-lg  md:w-2/3 shadow-xl hover:shadow-2xl border-none">
+      <div tw="flex-col my-2 w-full py-4 mx-auto bg-white border-b-2 border-r-2 border-gray-200 sm:px-4 sm:py-4 md:px-4 sm:rounded-lg  md:w-2/3 shadow-xl hover:shadow-2xl border-none">
         <Badge attending={attending}>
           <strong> {attending ? 'Hadir' : 'Tidak Hadir'}</strong>
         </Badge>
