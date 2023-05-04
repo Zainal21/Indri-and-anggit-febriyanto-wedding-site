@@ -15,7 +15,7 @@ export default function CardBride(props) {
             alt=""
           />
 
-          <h1 tw="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-gray-600">
+          <h1 tw="mt-4 text-2xl font-semibold text-gray-800 capitalize dark:text-white group-hover:text-gray-600">
             Anggit Febriyanto
           </h1>
 
@@ -33,7 +33,7 @@ export default function CardBride(props) {
             alt=""
           />
 
-          <h1 tw="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-gray-600">
+          <h1 tw="mt-4 text-2xl font-semibold text-gray-800 capitalize dark:text-white group-hover:text-gray-600">
             Someone
           </h1>
 

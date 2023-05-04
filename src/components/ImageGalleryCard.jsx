@@ -7,7 +7,7 @@ export default function ImageGalleryCard() {
   return (
     <div tw="grid grid-cols-1 md:grid-cols-3 gap-4 md:m-0 m-5">
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -17,7 +17,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -27,7 +27,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -37,7 +37,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -47,7 +47,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -57,7 +57,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -67,7 +67,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -77,7 +77,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -87,7 +87,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -97,7 +97,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -107,7 +107,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
@@ -117,7 +117,7 @@ export default function ImageGalleryCard() {
         </Flip>
       </div>
       <div>
-        <Flip top cascade>
+        <Flip top>
           <LazyLoadImage
             effect="blur"
             tw="h-auto max-w-full rounded-lg transition ease-in-out ease-in-out hover:-translate-y-1"
