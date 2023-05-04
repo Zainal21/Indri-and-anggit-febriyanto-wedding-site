@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Anggit Febriyanto & Indri`,
-    description: `Anggit Febriyanto & Indri`,
+    title: `Anggit Febriyanto & Someone`,
+    description: `Anggit Febriyanto & Someone`,
     author: `@hi.muhammadzain`
   },
   plugins: [
