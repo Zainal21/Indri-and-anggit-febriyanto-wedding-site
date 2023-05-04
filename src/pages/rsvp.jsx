@@ -253,7 +253,7 @@ const Rsvp = () => {
             </div>
           </Fade>
 
-          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
+          <div tw="grid md:grid-cols-2 grid-cols-1 gap-4 text-center font-poppin text-gold-900 py-20">
             <Fade left>
               <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
                 AKAD
@@ -277,7 +277,7 @@ const Rsvp = () => {
               </div>
             </Fade>
           </div>
-          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
+          <div tw="grid md:grid-cols-2 grid-cols-1 gap-4 text-center font-poppin text-gold-900 py-20">
             <Fade left>
               <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
                 RESEPSI
