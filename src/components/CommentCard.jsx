@@ -41,7 +41,7 @@ export default function CommentCard({
 }
 
 const Badge = styled.span((attending) => [
-  tw` text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:text-blue-300 float-right`,
+  tw` text-xs font-medium mr-2 px-2.5 py-0.5 rounded float-right`,
   tw`hover:(scale-105)`,
   attending ? tw`bg-blue-100 text-blue-800` : 'bg-red-100 text-red-800'
 ])

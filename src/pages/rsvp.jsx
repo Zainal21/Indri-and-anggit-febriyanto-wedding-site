@@ -51,6 +51,7 @@ const Rsvp = () => {
     if (pin !== process.env.GATSBY_PIN_CODE) {
       navigate('/')
     }
+    window.scrollTo(0, 0)
   }, [])
 
   const changeRadio = (event) => {
@@ -322,10 +323,10 @@ const Rsvp = () => {
               Karanganyar, Jawa Tengah, 57752 Indonesia
             </div>
             <iframe
-              tw="text-center my-3 w-full p-5"
+              tw="text-center my-3 w-full p-20"
+              width={400}
+              height={600}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7910.236056685573!2d110.96955384528815!3d-7.562108434254441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a18dfded52f2f%3A0x5e072214c665e85f!2sNgemplak%2C%20Kaliboto%2C%20Kec.%20Mojogedang%2C%20Kabupaten%20Karanganyar%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1682414854947!5m2!1sid!2sid"
-              width="600"
-              height="450"
               style={{
                 border: 0
               }}

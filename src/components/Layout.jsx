@@ -19,6 +19,10 @@ const Layout = ({ children, ...rest }) => {
     `
   )
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const metaDescription = site.siteMetadata?.description
   const defaultTitle = site.siteMetadata?.title
   return (

@@ -9,7 +9,8 @@ const Modal = ({ setShowModal }) => {
   const onSubmit = () => {
     toast.dismiss()
     if (pin === process.env.GATSBY_PIN_CODE) {
-      navigate(`/rsvp?pin=${pin}`)
+      // navigate(`/rsvp?pin=${pin}`)
+      window.location.href = `/rsvp?pin=${pin}`
       toast.success('Welcome... Please fill the RSVP form.')
     } else {
       toast.error('Incorrect PIN. Please try again.')

@@ -15,11 +15,11 @@ export default function CardBride(props) {
             alt=""
           />
 
-          <h1 tw="mt-4 text-2xl font-semibold text-gray-800 capitalize dark:text-white group-hover:text-gray-600">
+          <h1 tw="mt-4 text-2xl font-semibold text-gray-800 capitalize group-hover:text-gray-600">
             Anggit Febriyanto
           </h1>
 
-          <p tw="mt-2 text-gray-800 capitalize dark:text-gray-300 group-hover:text-gray-800 text-lg">
+          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 text-lg font-sans">
             Putra pertama dari Sugiyo & Subeni
           </p>
         </div>
@@ -33,11 +33,11 @@ export default function CardBride(props) {
             alt=""
           />
 
-          <h1 tw="mt-4 text-2xl font-semibold text-gray-800 capitalize dark:text-white group-hover:text-gray-600">
+          <h1 tw="mt-4 text-2xl font-semibold text-gray-800 capitalize group-hover:text-gray-600">
             Someone
           </h1>
 
-          <p tw="mt-2 text-gray-800 capitalize dark:text-gray-300 group-hover:text-gray-800 text-lg">
+          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 text-lg font-sans">
             Putri pertama dari - & -
           </p>
         </div>
