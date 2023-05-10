@@ -44,7 +44,7 @@ export default function ImageGalleryCard() {
             <div>
               <img
                 tw="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                src="hsttps://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
                 alt=""
               />
             </div>
