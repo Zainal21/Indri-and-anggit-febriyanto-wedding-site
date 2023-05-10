@@ -88,14 +88,14 @@ const App = () => {
             className="container"
             tw="mx-auto flex flex-col items-center relative"
           >
-            <div tw="p-5 block mt-24">
+            <div tw="p-2 block">
               <Fade top>
                 <Logo />
               </Fade>
             </div>
-            <div tw="w-full sm:w-3/5 -mt-8">
+            <div tw="w-full -mt-20 mb-5">
               <Fade bottom>
-                <img src={GroomsBride} />
+                <img src={GroomsBride} tw="mb-5" />
               </Fade>
             </div>
 
@@ -330,7 +330,6 @@ const App = () => {
                         src={QRImage}
                         tw="mx-auto w-80 mb-16 rounded-lg my-2"
                       />
-
                       <div tw="text-xl my-2">Transfer via BCA</div>
                       <div tw="font-bold text-2xl my-2">8283991838</div>
                       <div tw="font-bold text-xl my-2">Anggit Febrianto</div>

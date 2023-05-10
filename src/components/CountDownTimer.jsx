@@ -11,7 +11,7 @@ export default function CountDownTimer() {
   })
 
   useEffect(() => {
-    const targetDate = new Date('2023-05-01T00:00:00') // Change this to your target date
+    const targetDate = new Date('2023-06-01T00:00:00') // Change this to your target date
     const intervalId = setInterval(() => {
       const now = new Date()
       const timeDiff = targetDate - now
@@ -29,7 +29,7 @@ export default function CountDownTimer() {
 
   if (countdown.days > 0) {
     return (
-      <div tw="grid grid-cols-4 gap-2 justify-items-center">
+      <div tw="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center">
         <Fade bottom opposite cascade>
           <div tw="bg-gold-100 rounded-lg text-center p-10">
             <div tw="text-xl font-bold">Days</div>
