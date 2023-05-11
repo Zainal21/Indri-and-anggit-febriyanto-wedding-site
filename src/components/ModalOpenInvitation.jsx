@@ -43,15 +43,14 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
                   <div tw="text-4xl sm:text-5xl  text-gold-900 text-center  mt-5 md:mt-28">
                     Weeding Of
                   </div>
-                  <div tw="text-xl sm:text-5xl font-brittany  font-bold text-gold-900 text-center  mt-10">
-                    Anggit Febriyanto & Someone
+                  <div tw="text-3xl sm:text-5xl font-brittany  font-bold text-gold-900 text-center  mt-10">
+                    Anggit Febriyanto & Indri
                   </div>
-                  <div tw="text-xl mt-10">
-                    Kepada Bpk/Ibu/Saudara/i: <br />
-                    di Tempat,
-                  </div>
-                  <div tw="font-bold text-xl my-5">
-                    {recipient !== null ? recipient : '-'}
+                  <div tw="text-xl mt-10">Kepada Bpk/Ibu/Saudara/i</div>
+                  <div tw="font-bold sm:text-2xl text-xl my-5">
+                    {recipient == undefined || recipient == ''
+                      ? '-'
+                      : recipient}
                   </div>
                   <div tw="text-lg"></div>
                   <div tw="px-12">

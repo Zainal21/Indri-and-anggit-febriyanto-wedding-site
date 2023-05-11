@@ -78,6 +78,11 @@ const Layout = ({ children, ...rest }) => {
           <meta name="apple-mobile-web-app-status-bar-style" content="black" />
           <meta name="google" content="notranslate" />
           <meta name="mobile-web-app-capable" content="yes" />
+          <link
+            rel="shortcut icon"
+            href="/static/favicon.ico"
+            type="image/x-icon"
+          />
         </Helmet>
         <GlobalStyles />
         {children}

@@ -34,7 +34,7 @@ export default function CardBride(props) {
           />
 
           <h1 tw="mt-4 text-2xl font-semibold text-gray-800 capitalize group-hover:text-gray-600">
-            Someone
+            Indri
           </h1>
 
           <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 text-lg font-sans">

@@ -89,12 +89,12 @@ const App = () => {
             tw="mx-auto flex flex-col items-center relative"
           >
             <div tw="p-2 block">
-              <Fade top>
+              <Fade cascade top>
                 <Logo />
               </Fade>
             </div>
             <div tw="w-full -mt-20 mb-5">
-              <Fade bottom>
+              <Fade cascade bottom>
                 <img src={GroomsBride} tw="mb-5" />
               </Fade>
             </div>
@@ -206,6 +206,52 @@ const App = () => {
                   </div>
                 </Fade>
               </div>
+              <div tw="py-10 bg-white relative">
+                <div
+                  className="container"
+                  tw="mx-auto items-center pb-12 px-4 sm:px-0 relative text-center"
+                >
+                  <Fade top>
+                    <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12 mt-12">
+                      Location
+                    </div>
+                  </Fade>
+                  <Fade bottom>
+                    <div tw="font-poppin font-semibold mb-2 text-lg">
+                      Rumah Kami
+                    </div>
+                    <div tw="font-poppin mb-4 text-xl">
+                      Sidorejo RT 1/12, Kaliboto, Mojogedang,
+                      <br />
+                      Karanganyar, Jawa Tengah, 57752 Indonesia
+                    </div>
+                    <iframe
+                      tw="text-center my-3 w-full p-10"
+                      width={400}
+                      height={600}
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d247.19567255734032!2d110.9774784500273!3d-7.5607189079954775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMzMnMzguNiJTIDExMMKwNTgnNDAuMyJF!5e0!3m2!1sid!2sid!4v1683722852012!5m2!1sid!2sid"
+                      style={{
+                        border: 0
+                      }}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </Fade>
+                  <Fade bottom>
+                    <div tw="flex mb-4 items-center justify-center">
+                      <div tw="py-4">
+                        <Link
+                          isSecondary={true}
+                          target="_blank"
+                          href="https://goo.gl/maps/2zp6CD6yPZ73MmUs6"
+                        >
+                          Direction
+                        </Link>
+                      </div>
+                    </div>
+                  </Fade>
+                </div>
+              </div>
               <div tw="grid grid-cols-1 gap-4 text-center font-poppin text-gold-900 py-20">
                 <Fade top>
                   <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
@@ -233,15 +279,12 @@ const App = () => {
                     </Fade>
                     {showGretting ? (
                       <>
-                        <div
-                          tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
-                          style={{ maxWidth: 640 }}
-                        >
+                        <div tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center">
                           <div
-                            className="list-item"
                             style={{
-                              height: '500px',
-                              overflowY: 'scroll'
+                              height: '20rem',
+                              overflowY: 'scroll',
+                              overflowX: 'scroll'
                             }}
                           >
                             {loading == true && 'Sedang Memuat Data....'}
@@ -334,7 +377,7 @@ const App = () => {
                       <div tw="font-bold text-2xl my-2">8283991838</div>
                       <div tw="font-bold text-xl my-2">Anggit Febrianto</div>
                       <button
-                        tw="border-2 mb-16 border-gold-900 text-gold-900 font-sans font-semibold px-8 py-4 rounded-xl focus:outline-none hover:(scale-105) transform transition-transform duration-75"
+                        tw="border-2 mb-16 border-gold-900 text-gold-900 font-sans font-semibold px-8 py-4 rounded-xl focus:outline-none hover:(scale-105) transform transition-transform duration-75 hover:bg-gold-900 hover:text-white"
                         onClick={handleCopy}
                       >
                         Copy To Clipboard
@@ -359,7 +402,8 @@ const App = () => {
                   agar kamu cenderung dan merasa tenteram kepadanya, dan Dia
                   menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada
                   yang demikian itu benar-benar terdapat tanda-tanda (kebesaran
-                  Allah) bagi kaum yang berpikir ~ QS. Ar-Rum Ayat 21 ~
+                  Allah) bagi kaum yang berpikir <br />
+                  <span tw="font-bold">~ QS. Ar-Rum Ayat 21 ~</span>
                 </div>
               </Bounce>
             </div>

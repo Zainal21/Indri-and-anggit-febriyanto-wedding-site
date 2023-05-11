@@ -34,7 +34,7 @@ const Rsvp = () => {
         reset()
         if (!error) {
           if (data[0]) {
-            toast.success('Please check your email.', {
+            toast.success('Terimakasih. sudah mengisi form kehadiran', {
               id: loadingToast
             })
           }
@@ -338,7 +338,7 @@ const Rsvp = () => {
             <div tw="flex mb-4 items-center justify-center">
               <div tw="py-4">
                 <Link
-                  isPrimary={true}
+                  isSecondary={true}
                   target="_blank"
                   href="https://goo.gl/maps/2zp6CD6yPZ73MmUs6"
                 >

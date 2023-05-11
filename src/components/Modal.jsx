@@ -33,7 +33,7 @@ const Modal = ({ setShowModal }) => {
           </div>
           <div css={tw`mb-10 text-lg`}>
             Hai, yang di sana! Terima kasih dan selamat datang di website
-            pernikahan <strong>Someone & Anggit Febrianto</strong>. Kami sangat
+            pernikahan <strong>Indri & Anggit Febrianto</strong>. Kami sangat
             senang melihat Anda di sini. Silakan masukkan pin Anda di bawah ini
             untuk RSVP untuk resepsi pernikahan.
           </div>
