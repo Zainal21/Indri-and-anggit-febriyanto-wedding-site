@@ -13,7 +13,7 @@ export default function CardBride(props) {
         >
           <img
             className="image-bride rounded-full"
-            tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-200 "
+            tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300 "
             src={brideMan}
             alt=""
           />
@@ -33,7 +33,7 @@ export default function CardBride(props) {
         >
           <img
             className="image-bride rounded-full"
-            tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-200"
+            tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
             src={brideWoman}
             alt=""
           />
