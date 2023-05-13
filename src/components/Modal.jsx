@@ -29,7 +29,7 @@ const Modal = ({ setShowModal }) => {
           css={tw`bg-white text-black p-4 sm:p-10 rounded-2xl sm:w-2/6 w-3/4 font-poppin text-center pointer-events-auto`}
         >
           <div css={tw`font-brittany text-5xl mb-8 mt-10 text-gold-900`}>
-            Invitation Only
+            Konfirmasi Kehadiran
           </div>
           <div css={tw`mb-10 text-lg`}>
             Hai, yang di sana! Terima kasih dan selamat datang di website

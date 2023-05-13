@@ -170,13 +170,23 @@ const App = () => {
                 </Fade>
                 <Fade right>
                   <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
-                    <div tw="text-lg">SATURDAY</div>
-                    <div tw="font-bold">20.5.2023</div>
-                    <div tw="text-lg">15.30 WIB</div>
+                    <div tw="text-lg">SENIN</div>
+                    <div tw="font-bold my-2">10 Juli 2023</div>
+                    <div tw="text-lg my-1 font-semibold text-center">
+                      Bertempat di{' '}
+                      <span tw="font-bold">
+                        Ngablak RT04/TW 06, Karangmojo, Tasikmadu
+                      </span>
+                    </div>
                     <div tw="px-12">
+                      <div tw="flex my-2">
+                        <Link isSecondary={true} href="#">
+                          Tambahkan Ke Kalender
+                        </Link>
+                      </div>
                       <div tw="flex">
                         <Link isSecondary={true} href="#">
-                          Add to Calendar
+                          Penunjuk Lokasi
                         </Link>
                       </div>
                     </div>
@@ -193,13 +203,13 @@ const App = () => {
                 </Fade>
                 <Fade right>
                   <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
-                    <div tw="text-lg">SATURDAY</div>
-                    <div tw="font-bold">20.5.2023</div>
-                    <div tw="text-lg">15.30 WIB</div>
+                    <div tw="text-lg">SENIN</div>
+                    <div tw="font-bold  my-2">10 Juli 2023</div>
+                    <div tw="text-lg hidden">-</div>
                     <div tw="px-12">
                       <div tw="flex">
                         <Link isSecondary={true} href="#">
-                          Add to Calendar
+                          Tambahkan Ke Kalender
                         </Link>
                       </div>
                     </div>
@@ -213,7 +223,7 @@ const App = () => {
                 >
                   <Fade top>
                     <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12 mt-12">
-                      Location
+                      Reception Location
                     </div>
                   </Fade>
                   <Fade bottom>
@@ -226,8 +236,8 @@ const App = () => {
                       Karanganyar, Jawa Tengah, 57752 Indonesia
                     </div>
                     <iframe
-                      tw="text-center my-3 w-full p-10"
-                      width={400}
+                      tw="text-center my-3 w-full"
+                      width={100}
                       height={600}
                       src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d247.19567255734032!2d110.9774784500273!3d-7.5607189079954775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMzMnMzguNiJTIDExMMKwNTgnNDAuMyJF!5e0!3m2!1sid!2sid!4v1683722852012!5m2!1sid!2sid"
                       style={{

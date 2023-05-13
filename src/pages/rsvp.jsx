@@ -7,11 +7,8 @@ import { Player } from '@lottiefiles/react-lottie-player'
 import toast, { Toaster } from 'react-hot-toast'
 import { useForm } from 'react-hook-form'
 import Butterfly from '../images/butterfly.json'
-import imageBackground from '../../static/image-1.jpeg'
 import { createClient } from '@supabase/supabase-js'
 import Fade from 'react-reveal/Fade'
-import Flip from 'react-reveal/Flip'
-import Bounce from 'react-reveal/Bounce'
 
 const supabase = createClient(
   process.env.GATSBY_SUPABASE_HOST,
@@ -229,7 +226,7 @@ const Rsvp = () => {
                 ) : null}
                 <div tw="flex mb-4 items-center justify-center">
                   <div tw="py-4">
-                    <Button isPrimary={true}>Submit</Button>
+                    <Button isPrimary={true}>Konfirmasi</Button>
                   </div>
                 </div>
               </div>
@@ -250,7 +247,7 @@ const Rsvp = () => {
           </Fade>
           <Fade bottom>
             <div tw="text-xl sm:text-2xl font-poppin font-bold text-gold-900 text-center mb-12 mt-12">
-              Saturday, 20th March 2021
+              SENIN, 10 Juli 2023
             </div>
           </Fade>
 
@@ -264,14 +261,23 @@ const Rsvp = () => {
             </Fade>
             <Fade right>
               <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
-                <div tw="text-lg">SATURDAY</div>
-                <div tw="font-bold">20.05.2023</div>
-                <div tw="text-lg">15.30 WIB</div>
-                <div tw="text-lg mb-4">16.30 SGT</div>
+                <div tw="text-lg">SENIN</div>
+                <div tw="font-bold my-2">10 Juli 2023</div>
+                <div tw="text-lg my-1 font-semibold text-center">
+                  Bertempat di{' '}
+                  <span tw="font-bold">
+                    Ngablak RT04/TW 06, Karangmojo, Tasikmadu
+                  </span>
+                </div>
                 <div tw="px-12">
+                  <div tw="flex my-2">
+                    <Link isSecondary={true} href="#">
+                      Tambahkan Ke Kalender
+                    </Link>
+                  </div>
                   <div tw="flex">
                     <Link isSecondary={true} href="#">
-                      Add to Calendar
+                      Penunjuk Lokasi
                     </Link>
                   </div>
                 </div>
@@ -288,14 +294,13 @@ const Rsvp = () => {
             </Fade>
             <Fade right>
               <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
-                <div tw="text-lg">SATURDAY</div>
-                <div tw="font-bold">20.05.2023</div>
-                <div tw="text-lg">15.30 WIB</div>
-                <div tw="text-lg mb-4">16.30 SGT</div>
+                <div tw="text-lg">SENIN</div>
+                <div tw="font-bold  my-2">10 Juli 2023</div>
+                <div tw="text-lg hidden">-</div>
                 <div tw="px-12">
                   <div tw="flex">
                     <Link isSecondary={true} href="#">
-                      Add to Calendar
+                      Tambahkan Ke Kalender
                     </Link>
                   </div>
                 </div>
@@ -312,7 +317,7 @@ const Rsvp = () => {
         >
           <Fade top>
             <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12 mt-12">
-              Location
+              Reception Location
             </div>
           </Fade>
           <Fade bottom>
