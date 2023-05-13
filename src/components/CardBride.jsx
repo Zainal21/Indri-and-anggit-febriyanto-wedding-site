@@ -1,7 +1,7 @@
 import React from 'react'
 import tw from 'twin.macro'
-import brideWoman from '../../static/images/pengantin1.jpeg'
-import brideMan from '../../static/images/pengantin2.jpeg'
+import brideWoman from '../../static/images/pengantin1.png'
+import brideMan from '../../static/images/pengantin2.png'
 
 export default function CardBride(props) {
   return (
