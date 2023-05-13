@@ -25,7 +25,7 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
           }}
         >
           <div className="flex">
-            <div tw="grid md:grid-cols-2 grid-cols-1 text-center font-poppin text-gold-900 py-20">
+            <div tw="grid md:grid-cols-2 grid-cols-1 text-center font-poppin text-gold-900 py-10 md:py-20">
               <Fade left>
                 <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-0 font-bold">
                   <img
@@ -45,12 +45,12 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
                   </div>
                   <div
                     className="font-beach"
-                    tw="text-3xl sm:text-5xl font-bold text-gold-900 text-center mt-4 sm:tracking-wide tracking-normal sm:leading-normal leading-loose"
+                    tw="text-3xl sm:text-5xl font-bold text-gold-900 text-center mt-3 md:mt-4 sm:tracking-wide tracking-normal sm:leading-normal leading-loose"
                   >
                     Anggit Febriyanto <br />& Indri Febryani
                   </div>
-                  <div tw="text-xl mt-8">Kepada Bpk/Ibu/Saudara/i</div>
-                  <div tw="font-bold sm:text-2xl text-xl my-3">
+                  <div tw="text-xl mt-3 md:mt-8">Kepada Bpk/Ibu/Saudara/i</div>
+                  <div tw="font-bold sm:text-2xl text-xl mt-3 md:mt-5">
                     {recipient == undefined || recipient == ''
                       ? '-'
                       : recipient}
@@ -60,7 +60,7 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
                     <div tw="flex"></div>
                   </div>
                   <button
-                    tw="text-center font-sans font-semibold rounded-xl focus:outline-none bg-gold-900 text-white text-sm text-lg sm:py-4 sm:px-8 px-4 py-2"
+                    tw="mt-3 md:mt-5 text-center font-sans font-semibold rounded-xl focus:outline-none bg-gold-900 text-white text-sm text-lg sm:py-4 sm:px-8 px-3 py-1"
                     onClick={() => setShowModal(false)}
                   >
                     Buka Undangan

@@ -9,10 +9,10 @@ export default function CardBride(props) {
       <div tw="grid grid-cols-1 xl:mt-16 md:grid-cols-2 xl:grid-cols-2 w-full">
         <div
           className="group photo"
-          tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
+          tw="flex flex-col my-3 items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
         >
           <img
-            className="image-bride"
+            className="image-bride rounded-full"
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-200 "
             src={brideMan}
             alt=""
@@ -20,10 +20,10 @@ export default function CardBride(props) {
           <h1 tw="mt-4 text-2xl font-bold text-gray-800 capitalize group-hover:text-gray-600">
             Anggit Febriyanto
           </h1>
-          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 text-xl font-sans text-center font-semibold">
+          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 md:text-xl text-lg font-sans text-center font-semibold">
             Anak dari Bp. Sugiyo & Ibu Beni Setyowati
           </p>
-          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 text-xl font-sans text-center">
+          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 md:text-xl text-lg  font-sans text-center">
             Sidorejo RT 01/ RW 12, kaliboto, Mojogedang
           </p>
         </div>
@@ -32,20 +32,20 @@ export default function CardBride(props) {
           tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
         >
           <img
-            className="image-bride"
+            className="image-bride rounded-full"
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-200"
             src={brideWoman}
             alt=""
           />
 
           <h1 tw="mt-4 text-2xl font-bold text-gray-800 capitalize group-hover:text-gray-600">
-            Indri
+            Indri Febryani
           </h1>
 
-          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 text-xl font-sans font-semibold">
+          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 md:text-xl text-lg   text-center font-sans font-semibold">
             Anak dari Bp. Ngali & Ibu Yati
           </p>
-          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 text-xl font-sans text-center font-medium">
+          <p tw="mt-2 text-gray-800 capitalize group-hover:text-gray-800 md:text-xl text-lg  font-sans text-center font-medium">
             Ngablak Rt RT 04/ RW 06, Karangmojo, Tasikmadu
           </p>
         </div>

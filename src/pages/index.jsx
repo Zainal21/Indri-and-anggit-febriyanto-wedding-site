@@ -93,7 +93,7 @@ const App = () => {
                 <Logo />
               </Fade>
             </div>
-            <div tw="w-full -mt-20 mb-5">
+            <div tw="w-full md:-mt-20 mb-5">
               <Fade cascade bottom>
                 <img src={GroomsBride} tw="mb-5" />
               </Fade>

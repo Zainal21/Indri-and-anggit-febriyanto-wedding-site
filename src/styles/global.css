@@ -18,6 +18,10 @@ body {
   overflow-x: hidden;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .font-beach {
   font-family: 'Beautiful Beach', sans-serif;
 }
