@@ -45,12 +45,12 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
                   </div>
                   <div
                     className="font-beach"
-                    tw="text-3xl sm:text-5xl font-bold text-gold-900 text-center  mt-10 sm:tracking-wide tracking-normal sm:leading-normal leading-loose"
+                    tw="text-3xl sm:text-5xl font-bold text-gold-900 text-center mt-4 sm:tracking-wide tracking-normal sm:leading-normal leading-loose"
                   >
                     Anggit Febriyanto <br />& Indri Febryani
                   </div>
-                  <div tw="text-xl mt-10">Kepada Bpk/Ibu/Saudara/i</div>
-                  <div tw="font-bold sm:text-2xl text-xl my-5">
+                  <div tw="text-xl mt-8">Kepada Bpk/Ibu/Saudara/i</div>
+                  <div tw="font-bold sm:text-2xl text-xl my-3">
                     {recipient == undefined || recipient == ''
                       ? '-'
                       : recipient}
