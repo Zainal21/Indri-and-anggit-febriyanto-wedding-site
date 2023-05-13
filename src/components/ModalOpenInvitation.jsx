@@ -27,7 +27,7 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
           <div className="flex">
             <div tw="grid md:grid-cols-2 grid-cols-1 text-center font-poppin text-gold-900 py-20">
               <Fade left>
-                <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
+                <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-0 font-bold">
                   <img
                     src={ImageAnimation}
                     alt="weeding"
@@ -43,8 +43,11 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
                   <div tw="text-4xl sm:text-5xl  text-gold-900 text-center  mt-5 md:mt-28">
                     Weeding Of
                   </div>
-                  <div tw="text-3xl sm:text-5xl font-brittany  font-bold text-gold-900 text-center  mt-10">
-                    Anggit Febriyanto & Indri
+                  <div
+                    className="font-beach"
+                    tw="text-3xl sm:text-5xl font-bold text-gold-900 text-center  mt-10 sm:tracking-wide tracking-normal sm:leading-normal leading-loose"
+                  >
+                    Anggit Febriyanto <br />& Indri Febryani
                   </div>
                   <div tw="text-xl mt-10">Kepada Bpk/Ibu/Saudara/i</div>
                   <div tw="font-bold sm:text-2xl text-xl my-5">
