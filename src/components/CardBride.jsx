@@ -14,7 +14,7 @@ export default function CardBride(props) {
           <img
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300 "
             src={brideMan}
-            alt=""
+            alt="bride man"
           />
           <h1 tw="mt-4 text-2xl font-bold text-gray-800 capitalize group-hover:text-gray-600">
             Anggit Febriyanto
@@ -33,7 +33,7 @@ export default function CardBride(props) {
           <img
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
             src={brideWoman}
-            alt=""
+            alt="bride woman"
           />
 
           <h1 tw="mt-4 text-2xl font-bold text-gray-800 capitalize group-hover:text-gray-600">
