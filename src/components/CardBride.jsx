@@ -7,12 +7,11 @@ export default function CardBride(props) {
   return (
     <div tw="container px-6 py-10 mx-auto">
       <div tw="grid grid-cols-1 xl:mt-16 md:grid-cols-2 xl:grid-cols-2 w-full">
-        <div tw="flex flex-col my-3 items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2">
-          <img
-            tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300 "
-            src={brideMan}
-            alt="bride man"
-          />
+        <div
+          className="group photo"
+          tw="flex flex-col my-3 items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
+        >
+          <img className="image-cover" src={brideMan} alt="bride man" />
           <h1 tw="mt-4 text-2xl font-bold text-gray-800 capitalize group-hover:text-gray-600">
             Anggit Febriyanto
           </h1>
@@ -23,12 +22,11 @@ export default function CardBride(props) {
             Sidorejo RT 01/ RW 12, kaliboto, Mojogedang
           </p>
         </div>
-        <div tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2">
-          <img
-            tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
-            src={brideWoman}
-            alt="bride woman"
-          />
+        <div
+          className="group photo"
+          tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
+        >
+          <img className="image-cover" src={brideWoman} alt="bride woman" />
 
           <h1 tw="mt-4 text-2xl font-bold text-gray-800 capitalize group-hover:text-gray-600">
             Indri Febryani
