@@ -12,7 +12,6 @@ export default function CardBride(props) {
           tw="flex flex-col my-3 items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
         >
           <img
-            className="image-bride rounded-full"
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300 "
             src={brideMan}
             alt=""
@@ -32,7 +31,6 @@ export default function CardBride(props) {
           tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
         >
           <img
-            className="image-bride rounded-full"
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
             src={brideWoman}
             alt=""
