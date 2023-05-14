@@ -7,10 +7,7 @@ export default function CardBride(props) {
   return (
     <div tw="container px-6 py-10 mx-auto">
       <div tw="grid grid-cols-1 xl:mt-16 md:grid-cols-2 xl:grid-cols-2 w-full">
-        <div
-          className="group photo"
-          tw="flex flex-col my-3 items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
-        >
+        <div tw="flex flex-col my-3 items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2">
           <img
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300 "
             src={brideMan}
@@ -26,10 +23,7 @@ export default function CardBride(props) {
             Sidorejo RT 01/ RW 12, kaliboto, Mojogedang
           </p>
         </div>
-        <div
-          className="group photo"
-          tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2"
-        >
+        <div tw="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer  hover:bg-gold-100 rounded-xl text-base shadow-xl hover:shadow-2xl mx-2">
           <img
             tw="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
             src={brideWoman}
