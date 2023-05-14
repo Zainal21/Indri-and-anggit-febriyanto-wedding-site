@@ -271,12 +271,18 @@ const Rsvp = () => {
                 </div>
                 <div tw="px-12">
                   <div tw="flex my-2">
-                    <Link isSecondary={true} href="#">
-                      Tambahkan Ke Kalender
+                    <Link
+                      isSecondary={true}
+                      href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                    >
+                      Simpan Ke Kalender
                     </Link>
                   </div>
                   <div tw="flex">
-                    <Link isSecondary={true} href="#">
+                    <Link
+                      isSecondary={true}
+                      href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                    >
                       Penunjuk Lokasi
                     </Link>
                   </div>
@@ -300,7 +306,7 @@ const Rsvp = () => {
                 <div tw="px-12">
                   <div tw="flex">
                     <Link isSecondary={true} href="#">
-                      Tambahkan Ke Kalender
+                      Simpan Ke Kalender
                     </Link>
                   </div>
                 </div>

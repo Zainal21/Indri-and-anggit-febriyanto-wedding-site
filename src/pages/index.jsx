@@ -25,6 +25,8 @@ import Fade from 'react-reveal/Fade'
 import 'react-image-lightbox/style.css'
 import Flip from 'react-reveal/Flip'
 import Bounce from 'react-reveal/Bounce'
+import MusicPlayer from '../components/MusicPlayer'
+// import backsound from '../../static/Shane-Filan-Beautiful-In-White-Official-Video.mp3'
 
 const supabase = createClient(
   process.env.GATSBY_SUPABASE_HOST,
@@ -53,6 +55,10 @@ const App = () => {
       })
   }
 
+  const handlePlayingMusic = () => {
+    document.getElementById('song').play()
+  }
+
   const fetchGreeting = async () => {
     let { data, error } = await supabase.from('rsvp').select('*')
     setloading(false)
@@ -76,10 +82,12 @@ const App = () => {
         background: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1)), url(${imageBackground}) center center / cover no-repeat`
       }}
     >
+      <MusicPlayer />
       {showModalInvitation ? (
         <ModalOpenInvitation
           setShowModal={setShowModalInvitation}
           recipient={recipient}
+          handlePlaying={handlePlayingMusic}
         />
       ) : (
         <>
@@ -180,8 +188,11 @@ const App = () => {
                     </div>
                     <div tw="px-12">
                       <div tw="flex my-2">
-                        <Link isSecondary={true} href="#">
-                          Tambahkan Ke Kalender
+                        <Link
+                          isSecondary={true}
+                          href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                        >
+                          Simpan Ke Kalender
                         </Link>
                       </div>
                       <div tw="flex">
@@ -208,8 +219,11 @@ const App = () => {
                     <div tw="text-lg hidden">-</div>
                     <div tw="px-12">
                       <div tw="flex">
-                        <Link isSecondary={true} href="#">
-                          Tambahkan Ke Kalender
+                        <Link
+                          isSecondary={true}
+                          href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                        >
+                          Simpan Ke Kalender
                         </Link>
                       </div>
                     </div>
@@ -237,7 +251,7 @@ const App = () => {
                     </div>
                     <iframe
                       tw="text-center my-3 w-full"
-                      width={100}
+                      width={600}
                       height={600}
                       src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d247.19567255734032!2d110.9774784500273!3d-7.5607189079954775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMzMnMzguNiJTIDExMMKwNTgnNDAuMyJF!5e0!3m2!1sid!2sid!4v1683722852012!5m2!1sid!2sid"
                       style={{

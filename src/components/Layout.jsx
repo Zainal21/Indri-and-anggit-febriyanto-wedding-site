@@ -4,7 +4,6 @@ import { GlobalStyles } from 'twin.macro'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import SimpleReactLightbox from 'simple-react-lightbox'
-import SoundTrackPlayer from './SoundTrackPlayer'
 
 const Layout = ({ children, ...rest }) => {
   const { site } = useStaticQuery(
@@ -87,7 +86,6 @@ const Layout = ({ children, ...rest }) => {
         </Helmet>
         <GlobalStyles />
         {children}
-        <SoundTrackPlayer />
       </div>
     </SimpleReactLightbox>
   )

@@ -4,8 +4,13 @@ import Button from './Button'
 import imageBackground from '../../static/image-1.jpeg'
 import ImageAnimation from '../../static/image-2.png'
 import Fade from 'react-reveal/Fade'
+import { FaEnvelopeOpenText } from 'react-icons/fa'
 
-const ModalOpenInvitation = ({ setShowModal, recipient }) => {
+const ModalOpenInvitation = ({ setShowModal, recipient, handlePlaying }) => {
+  const handleBothEvent = () => {
+    handlePlaying()
+    setShowModal(false)
+  }
   return (
     <div css={tw`fixed h-screen w-screen left-0 top-0 z-20`}>
       <div
@@ -59,12 +64,16 @@ const ModalOpenInvitation = ({ setShowModal, recipient }) => {
                   <div tw="px-12">
                     <div tw="flex"></div>
                   </div>
-                  <button
-                    tw="mt-3 md:mt-5 text-center font-sans font-semibold rounded-xl focus:outline-none bg-gold-900 text-white text-sm text-lg sm:py-4 sm:px-8 px-3 py-1"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Buka Undangan
-                  </button>
+                  <div className="text-center">
+                    <button
+                      id="wdp-button-wrapper"
+                      tw="font-sans font-semibold sm:py-4 sm:px-8 px-3 py-1 rounded-xl focus:outline-none my-2 transform transition-transform duration-75 hover:(scale-100) border-2 border-gold-900 text-gold-900 hover:bg-gold-900 hover:text-white mt-3 md:mt-5 inline-flex items-center"
+                      onClick={() => handleBothEvent()}
+                    >
+                      <FaEnvelopeOpenText tw="mr-2" />
+                      Buka Undangan
+                    </button>
+                  </div>
                 </div>
               </Fade>
             </div>
