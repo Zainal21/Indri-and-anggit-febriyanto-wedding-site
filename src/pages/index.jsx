@@ -380,7 +380,7 @@ const App = () => {
                   isSecondary={true}
                   onClick={() => setShowGiving(!showGiving)}
                 >
-                  Kirim Kado
+                  Kirim Kado / Hadiah
                 </Button>
               </Fade>
               {showGiving ? (
