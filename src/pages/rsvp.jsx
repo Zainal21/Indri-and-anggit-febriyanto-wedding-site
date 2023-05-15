@@ -358,7 +358,7 @@ const Rsvp = () => {
                   target="_blank"
                   href="https://goo.gl/maps/2zp6CD6yPZ73MmUs6"
                 >
-                  Direction
+                  Penunjuk Lokasi
                 </Link>
               </div>
             </div>
