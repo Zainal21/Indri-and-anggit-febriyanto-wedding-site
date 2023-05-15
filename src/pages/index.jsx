@@ -305,10 +305,10 @@ const App = () => {
                     </Fade>
                     {showGretting ? (
                       <>
-                        <div tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center bg-gold-100">
+                        <div tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center bg-gold-100 rounded-md my-2 shadow-md">
                           <div
                             style={{
-                              height: '20rem',
+                              height: '30rem',
                               overflowY: 'scroll',
                               overflowX: 'scroll'
                             }}
