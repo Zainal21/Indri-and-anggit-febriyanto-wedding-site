@@ -38,7 +38,10 @@ export default function Footer() {
         </a>
         .
       </p>
-      <a tw="hover:text-gold-900 underline" href="https://github.com/Zainal21">
+      <a
+        tw="hover:text-gold-900 underline"
+        href="https://github.com/Zainal21/anggit-febriyanto-indri-wedding-site/blob/main/LICENSE"
+      >
         MIT License
       </a>{' '}
       &copy; {new Date().getFullYear()} Develop by{' '}
