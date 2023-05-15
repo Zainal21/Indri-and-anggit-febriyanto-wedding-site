@@ -286,7 +286,7 @@ const App = () => {
                 </Fade>
                 <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest">
                   <div tw="font-brittany text-4xl mb-8">Invitation Only</div>
-                  <div tw="px-12">
+                  <div tw="px-2">
                     <Fade cascade bottom>
                       <Button
                         isSecondary={true}
