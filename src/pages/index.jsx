@@ -190,7 +190,8 @@ const App = () => {
                       <div tw="flex my-2">
                         <Link
                           isSecondary={true}
-                          href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                          href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
+                          target="_blank"
                         >
                           Simpan Ke Kalender
                         </Link>
@@ -221,7 +222,8 @@ const App = () => {
                       <div tw="flex">
                         <Link
                           isSecondary={true}
-                          href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                          href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
+                          target="_blank"
                         >
                           Simpan Ke Kalender
                         </Link>
@@ -303,7 +305,7 @@ const App = () => {
                     </Fade>
                     {showGretting ? (
                       <>
-                        <div tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center">
+                        <div tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center bg-gold-100">
                           <div
                             style={{
                               height: '20rem',
@@ -378,7 +380,7 @@ const App = () => {
                   isSecondary={true}
                   onClick={() => setShowGiving(!showGiving)}
                 >
-                  Electronic Giving
+                  Kirim Kado
                 </Button>
               </Fade>
               {showGiving ? (

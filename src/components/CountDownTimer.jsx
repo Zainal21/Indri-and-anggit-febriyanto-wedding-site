@@ -11,7 +11,7 @@ export default function CountDownTimer() {
   })
 
   useEffect(() => {
-    const targetDate = new Date('2023-02-01T00:00:00') // Change this to your target date
+    const targetDate = new Date('2023-07-10T00:00:00') // Change this to your target date
     const intervalId = setInterval(() => {
       const now = new Date()
       const timeDiff = targetDate - now
@@ -31,25 +31,25 @@ export default function CountDownTimer() {
     return (
       <div tw="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center">
         <Fade bottom opposite cascade>
-          <div tw="bg-gold-100 rounded-lg text-center p-10 shadow hover:shadow-md">
+          <div tw="bg-gold-100 rounded-xl text-center p-10 shadow hover:shadow-md w-36">
             <div tw="text-xl font-bold">Days</div>
             <div tw="text-4xl font-bold">{countdown.days}</div>
           </div>
         </Fade>
         <Fade bottom opposite cascade>
-          <div tw="bg-gold-100 rounded-lg text-center p-10 shadow hover:shadow-md">
+          <div tw="bg-gold-100 rounded-xl text-center p-10 shadow hover:shadow-md w-36">
             <div tw="text-xl font-bold">Hours</div>
             <div tw="text-4xl font-bold">{countdown.hours}</div>
           </div>
         </Fade>
         <Fade bottom opposite cascade>
-          <div tw="bg-gold-100 rounded-lg text-center p-10 shadow hover:shadow-md">
+          <div tw="bg-gold-100 rounded-xl text-center p-10 shadow hover:shadow-md w-36">
             <div tw="text-xl font-bold">Minutes</div>
             <div tw="text-4xl font-bold">{countdown.minutes}</div>
           </div>
         </Fade>
         <Fade bottom opposite cascade>
-          <div tw="bg-gold-100 rounded-lg text-center p-10 shadow hover:shadow-md">
+          <div tw="bg-gold-100 rounded-xl text-center p-10 shadow hover:shadow-md w-36">
             <div tw="text-xl font-bold">Seconds</div>
             <div tw="text-4xl font-bold">{countdown.seconds}</div>
           </div>

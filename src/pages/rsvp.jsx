@@ -273,7 +273,7 @@ const Rsvp = () => {
                   <div tw="flex my-2">
                     <Link
                       isSecondary={true}
-                      href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                      href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
                     >
                       Simpan Ke Kalender
                     </Link>
@@ -281,7 +281,8 @@ const Rsvp = () => {
                   <div tw="flex">
                     <Link
                       isSecondary={true}
-                      href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Weeding%20Indri%20&%20Anggit&dates=20230709T220000.000ZZ/20230710T160000.000ZZ"
+                      href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
+                      target="_blank"
                     >
                       Penunjuk Lokasi
                     </Link>
@@ -305,7 +306,11 @@ const Rsvp = () => {
                 <div tw="text-lg hidden">-</div>
                 <div tw="px-12">
                   <div tw="flex">
-                    <Link isSecondary={true} href="#">
+                    <Link
+                      isSecondary={true}
+                      href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
+                      target="_blank"
+                    >
                       Simpan Ke Kalender
                     </Link>
                   </div>
