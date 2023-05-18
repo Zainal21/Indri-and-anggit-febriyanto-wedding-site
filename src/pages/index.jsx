@@ -197,7 +197,11 @@ const App = () => {
                         </Link>
                       </div>
                       <div tw="flex">
-                        <Link isSecondary={true} href="#">
+                        <Link
+                          isSecondary={true}
+                          href="https://goo.gl/maps/Km2E8c1oyWFTXvhw7"
+                          target="_blank"
+                        >
                           Penunjuk Lokasi
                         </Link>
                       </div>

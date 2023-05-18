@@ -19,15 +19,19 @@ const Rsvp = () => {
   const [pin, setPin] = useQueryParam('pin', StringParam)
   const [showPerson, setShowPerson] = React.useState(false)
   const [showPlusOne, setShowPlusOne] = React.useState(false)
+  const [loading, isLoading] = React.useState(false)
   const { register, errors, handleSubmit, reset } = useForm()
 
   const onSubmit = (data) => {
+    isLoading(true)
     let loadingToast = toast.loading('Please wait...')
     if (!data.person) data.person = 0
     supabase
       .from('rsvp')
       .insert([data])
       .then(({ data, error }) => {
+        isLoading(false)
+
         reset()
         if (!error) {
           if (data[0]) {
@@ -37,6 +41,7 @@ const Rsvp = () => {
           }
           navigate('#schedule')
         } else {
+          isLoading(false)
           toast.error(error.message, {
             id: loadingToast
           })
@@ -131,7 +136,7 @@ const Rsvp = () => {
                     name="phone"
                     ref={register({ required: true })}
                     css={tw`focus:ring-1 focus:outline-none w-full text-lg text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4`}
-                    type="text"
+                    type="number"
                     aria-label="WhatsApp Number (Nomor WhatsApp)"
                     placeholder="WhatsApp Number (Nomor WhatsApp)"
                   />
@@ -226,7 +231,9 @@ const Rsvp = () => {
                 ) : null}
                 <div tw="flex mb-4 items-center justify-center">
                   <div tw="py-4">
-                    <Button isPrimary={true}>Konfirmasi</Button>
+                    <Button isPrimary={true} disabled={loading ? true : false}>
+                      Konfirmasi
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -273,6 +280,7 @@ const Rsvp = () => {
                   <div tw="flex my-2">
                     <Link
                       isSecondary={true}
+                      target="_blank"
                       href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
                     >
                       Simpan Ke Kalender
@@ -281,7 +289,7 @@ const Rsvp = () => {
                   <div tw="flex">
                     <Link
                       isSecondary={true}
-                      href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
+                      href="https://goo.gl/maps/Km2E8c1oyWFTXvhw7"
                       target="_blank"
                     >
                       Penunjuk Lokasi
