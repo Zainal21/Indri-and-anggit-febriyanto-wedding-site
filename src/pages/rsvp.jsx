@@ -310,13 +310,13 @@ const Rsvp = () => {
             <Fade right>
               <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
                 <div tw="text-lg">SENIN</div>
-                <div tw="font-bold  my-2">10 Juli 2023</div>
+                <div tw="font-bold  my-2">13 Juli 2023</div>
                 <div tw="text-lg hidden">-</div>
                 <div tw="px-12">
                   <div tw="flex">
                     <Link
                       isSecondary={true}
-                      href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
+                      href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230713T011700Z"
                       target="_blank"
                     >
                       Simpan Ke Kalender

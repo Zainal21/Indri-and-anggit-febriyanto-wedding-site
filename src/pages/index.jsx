@@ -220,13 +220,13 @@ const App = () => {
                 <Fade right>
                   <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
                     <div tw="text-lg">SENIN</div>
-                    <div tw="font-bold  my-2">10 Juli 2023</div>
+                    <div tw="font-bold  my-2">13 Juli 2023</div>
                     <div tw="text-lg hidden">-</div>
                     <div tw="px-12">
                       <div tw="flex">
                         <Link
                           isSecondary={true}
-                          href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230710T011700Z"
+                          href="https://www.google.com/calendar/render?action=TEMPLATE&text=Weeding+Indri+Febryani+dan+Anggit+Febriyanto&location=Karanganyar%2C+Jawa+Tengah&dates=20230709T221600Z%2F20230713T011700Z"
                           target="_blank"
                         >
                           Simpan Ke Kalender
@@ -394,17 +394,12 @@ const App = () => {
                       tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
                       style={{ maxWidth: 640 }}
                     >
-                      <div tw="text-xl my-2">Transfer via Qris</div>
-                      <div tw="font-bold text-2xl my-2">0882616263626</div>
-                      <div tw="mb-4 font-bold  text-xl my-2">
-                        Anggit Febrianto
-                      </div>
                       <img
                         src={QRImage}
                         tw="mx-auto w-80 mb-16 rounded-lg my-2"
                       />
                       <div tw="text-xl my-2">Transfer via BCA</div>
-                      <div tw="font-bold text-2xl my-2">8283991838</div>
+                      <div tw="font-bold text-2xl my-2">3270653366</div>
                       <div tw="font-bold text-xl my-2">Anggit Febrianto</div>
                       <button
                         tw="border-2 mb-16 border-gold-900 text-gold-900 font-sans font-semibold px-8 py-4 rounded-xl focus:outline-none hover:(scale-105) transform transition-transform duration-75 hover:bg-gold-900 hover:text-white"
