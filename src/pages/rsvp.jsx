@@ -309,7 +309,7 @@ const Rsvp = () => {
             </Fade>
             <Fade right>
               <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
-                <div tw="text-lg">SENIN</div>
+                <div tw="text-lg">KAMIS</div>
                 <div tw="font-bold  my-2">13 Juli 2023</div>
                 <div tw="text-lg hidden">-</div>
                 <div tw="px-12">
