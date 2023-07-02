@@ -318,9 +318,12 @@ const App = () => {
                             }}
                           >
                             {loading == true && 'Sedang Memuat Data....'}
-                            {gretting.length < 1 &&
-                              loading === false &&
-                              'Tidak Ada Data Yang tersedia'}
+                            {gretting.length < 1 && loading === false && (
+                              <span tw="text-base">
+                                {' '}
+                                Tidak Ada Data Yang tersedia
+                              </span>
+                            )}
                             {gretting.map((item) => (
                               <CommentCard
                                 name={item.name}
