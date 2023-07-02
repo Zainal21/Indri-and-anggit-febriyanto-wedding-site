@@ -46,7 +46,7 @@ const App = () => {
 
   const handleCopy = () => {
     navigator.clipboard
-      .writeText(text)
+      .writeText('3270653366')
       .then(function () {
         toast.success('Success copy to clipboard.')
       })
