@@ -15,6 +15,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-react-leaflet',
       options: {
+        icon: 'src/images/icon.png',
         linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
       }
     }
